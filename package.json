@@ -1,0 +1,16 @@
+{
+	"name": "class_discord_bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node .",
+		"dev": "nodemon index.js"
+	},
+	"author": "Sintuz",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^12.2.0",
+		"nodemon": "^2.0.4"
+	}
+}
