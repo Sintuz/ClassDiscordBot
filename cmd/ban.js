@@ -2,6 +2,7 @@ module.exports = {
 	name: "ban",
 	description: "Ban a user",
 	requirements: "Administrator",
+	category: "Administration",
 	run: async (bot, message, args) => {
 		if (!message.member.hasPermission('ADMINISTRATOR')) return;
 

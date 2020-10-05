@@ -2,6 +2,7 @@ module.exports = {
 	name: "new",
 	description: "Create a new private channel",
 	requirements: "none",
+	category: "Channels",
 	run: async (bot, message, args) => {
 		message.guild.channels.create('ticket-' + message.author.username, {
 				type: 'category'
