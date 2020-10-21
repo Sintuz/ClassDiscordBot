@@ -24,11 +24,16 @@ fs.readdir('./cmd/', (err, files) => {
 
 bot.configs = require('./config.json');
 
-bot.once('ready', async () => {
-	console.log('Bot online');
+const setState = () => {
 	bot.user.setActivity(`${bot.configs.prefix}help`, {
 		type: 'PLAYING',
 	}).catch(console.error);
+};
+
+bot.once('ready', async () => {
+	console.log('Bot online');
+	setState();
+	setInterval(setState, 60*60*1000);
 });
 
 bot.on('message', async (message) => {
