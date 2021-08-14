@@ -10,7 +10,7 @@
 	"author": "Sintuz",
 	"license": "ISC",
 	"dependencies": {
-		"discord.js": "^13.0.1",
+		"discord.js": "^13.1.0",
 		"nodemon": "^2.0.12"
 	}
 }
